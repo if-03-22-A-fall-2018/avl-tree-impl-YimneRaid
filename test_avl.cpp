@@ -63,6 +63,7 @@ TEST(get_max)
 }
 
 int count_nodes(Node node, int key);
+
 TEST(no_duplicates)
 {
 	Node root = create_node(20);
@@ -71,7 +72,7 @@ TEST(no_duplicates)
 	unbalanced_insert(root, 10);
 	unbalanced_insert(root, 30);
 	unbalanced_insert(root, 20);
-	
+
 	ASSERT_EQUALS(1, count_nodes(root, 10));
 	ASSERT_EQUALS(1, count_nodes(root, 20));
 	ASSERT_EQUALS(1, count_nodes(root, 30));

@@ -19,4 +19,10 @@ Node rotate_left(Node node);
  */
 Node insert(Node node, int key);
 
+Node rotate_right(Node node);
+int max (int n1, int n2);
+int 	get_balance(Node node);
+Node 	unbalanced_insert (Node root, int key);
+
+
 #endif //BALANCEDTREE_AVL_TREE_H
